@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto_1.controladores.VerificacionView">
+    <children>
+        <Label layoutX="407.0" layoutY="26.0" text="Verificación de Cursos">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="cursoComboBox" layoutX="416.0" layoutY="116.0" prefHeight="47.0" prefWidth="200.0" promptText="Seleccionar Curso" />
+        <TableView fx:id="estudiantesTable" layoutX="86.0" layoutY="214.0" prefHeight="293.0" prefWidth="847.0">
+            <columns>
+                <TableColumn fx:id="carnetColumn" prefWidth="100.0" text="Carnet">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="carnet" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="nombreColumn" prefWidth="150.0" text="Nombre">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="nombre" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="emailColumn" prefWidth="200.0" text="Correo Electrónico">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="email" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="fechaColumn" prefWidth="150.0" text="Fecha de Asignación">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="fecha" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="solventeColumn" prefWidth="100.0" text="Solvente">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="solvente" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <PieChart fx:id="estudiantesPieChart" layoutX="166.0" layoutY="536.0" prefHeight="200.0" prefWidth="700.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,123 @@
+.root {
+    -fx-background-color: #f4f4f9;
+}
+
+#titleLabel {
+    -fx-font-size: 60px !important;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2e4057;
+    -fx-padding: 10px 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 5, 0.2, 2, 2);
+    -fx-text-alignment: left;
+}
+
+.subtitle {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3d5a80;
+    -fx-padding: 5px 0;
+}
+
+.text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #505050;
+}
+
+.button {
+    -fx-background-color: #3d5a80;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 15px 30px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 5, 0.2, 2, 2);
+}
+
+.button:hover {
+    -fx-background-color: #293a54;
+}
+
+.button:pressed {
+    -fx-background-color: #1b2838;
+}
+
+.button-secondary {
+    -fx-background-color: #98c1d9;
+    -fx-text-fill: #2e4057;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #81a3c3;
+}
+
+.button-secondary:pressed {
+    -fx-background-color: #7294a8;
+}
+
+.text-field {
+    -fx-font-size: 14px;
+    -fx-text-fill: #505050;
+    -fx-background-color: white;
+    -fx-border-color: #c4c4c4;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.text-field:focused {
+    -fx-border-color: #3d5a80;
+}
+
+.label-error {
+    -fx-text-fill: #e63946;
+    -fx-font-size: 12px;
+}
+
+
+.panel {
+    -fx-background-color: white;
+    -fx-border-color: #c4c4c4;
+    -fx-border-radius: 10px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.1, 2, 2);
+}
+
+.list-view, .table-view {
+    -fx-background-color: white;
+    -fx-border-color: #c4c4c4;
+    -fx-border-radius: 5px;
+}
+
+.list-cell, .table-row-cell {
+    -fx-font-size: 14px;
+    -fx-text-fill: #505050;
+}
+
+.list-cell:selected, .table-row-cell:selected {
+    -fx-background-color: #3d5a80;
+    -fx-text-fill: white;
+}
+
+.nav-button {
+    -fx-background-color: #293a54;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 12px 30px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.nav-button:hover {
+    -fx-background-color: #1b2838;
+}
+
+.nav-button:pressed {
+    -fx-background-color: #0f1926;
+}
