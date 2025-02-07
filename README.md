@@ -1,45 +1,51 @@
 # Sistema de Asignaciones - Proyecto Universitario
 
-Este proyecto es un sistema de asignaciones desarrollado para tareas de la universidad. El sistema permite gestionar asignaciones de personas a cursos, verificación de cursos y manejo de datos relacionados con pagos y facturación. La aplicación consta de tres pantallas principales y utiliza una base de datos SQLite para almacenar y gestionar la información.
+Este es un sistema de asignaciones desarrollado para la universidad, que permite gestionar la asignación de cursos a personas. El sistema tiene tres pantallas principales y se conecta a una base de datos SQLite para almacenar y gestionar la información de los usuarios, cursos y pagos.
 
-## Características
+## Funcionalidades
 
-- **Pantalla 1: Asignaciones**
-  - Permite registrar los datos de una persona a asignar.
-  - Muestra los cursos disponibles y permite seleccionarlos.
-  - Registra los datos de pago y facturación.
-  - Los cursos seleccionados se agregan a un listado de cursos a asignar.
+El sistema incluye las siguientes pantallas:
 
-- **Pantalla 2: Verificación de Cursos**
-  - Muestra los cursos que han sido asignados a las personas.
-  
-- **Pantalla 3: Base de Datos**
-  - Utiliza SQLite para almacenar y gestionar los datos de las asignaciones, personas, cursos y pagos.
-  
-## Requisitos
+### Pantalla 1: Menú Principal
+- **Botón 1: Asignaciones**: Dirige al usuario a la pantalla de asignación de cursos.
+- **Botón 2: Verificación de Cursos**: Permite ver los cursos que han sido asignados.
 
-- **Java**: Se recomienda usar Java 11 o superior.
-- **SQLite**: Base de datos utilizada para gestionar la información.
-- **IDE**: Este proyecto fue desarrollado utilizando IntelliJ IDEA.
+### Pantalla 2: Asignaciones
+- En esta pantalla se registran los datos de la persona a asignar, incluyendo:
+  - Nombre, dirección, y demás datos relevantes de la persona.
+- Se presentan los **cursos disponibles** para seleccionar.
+- Una vez que se seleccionan los cursos, se agregan a un listado de **cursos a asignar**.
+- Se incluye una sección de **datos de pago y facturación**, para ingresar la información necesaria para completar la asignación.
 
-## Uso
+### Pantalla 3: Verificación de Cursos
+- Muestra una lista de los **cursos asignados** a las personas registradas en el sistema.
 
-1. **Pantalla de Asignaciones**: 
-   - Ingresar los datos de la persona a asignar.
-   - Seleccionar los cursos disponibles.
-   - Registrar la información de pago y facturación.
-   - Los cursos seleccionados se agregarán automáticamente al listado de cursos asignados.
+## Base de Datos
+El sistema utiliza **SQLite** para almacenar la siguiente información:
+- Datos personales de las personas asignadas.
+- Cursos disponibles.
+- Información de pagos y facturación.
 
-2. **Pantalla de Verificación de Cursos**: 
-   - Visualizar los cursos asignados a las personas.
+## Tecnologías Utilizadas
+- **Lenguaje de programación**: Java
+- **IDE**: IntelliJ IDEA
+- **Base de datos**: SQLite
+- **Interfaz de usuario**: [Especificar librerías si las usas, como JavaFX, Swing, etc.]
 
-3. **Base de Datos**: 
-   - La base de datos SQLite se utiliza para guardar la información de asignaciones, personas, cursos y pagos. Los datos se actualizan y consultan a través de la interfaz.
+## Requisitos del Sistema
+- Tener instalado **Java** (preferentemente versión 8 o superior).
+- Tener instalado **IntelliJ IDEA**.
+- Tener configurada una base de datos **SQLite**.
 
-## Contribuciones
+## Instrucciones de Uso
 
-Si deseas contribuir a este proyecto, siéntete libre de hacer un **fork** y enviar tus **pull requests**. ¡Cualquier mejora es bienvenida!
+1. Clona este repositorio en tu máquina local.
+2. Abre el proyecto en **IntelliJ IDEA**.
+3. Asegúrate de tener la JDK instalada en tu entorno de desarrollo.
+4. Si es necesario, configura la base de datos SQLite.
+5. Ejecuta el archivo `Main.java` o el archivo principal de la aplicación desde IntelliJ para iniciar el sistema.
 
-## Licencia
-
-Este proyecto está bajo la licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
+```bash
+git clone <repositorio_url>
+cd <directorio_del_proyecto>
+<instrucciones_para_ejecutar>
